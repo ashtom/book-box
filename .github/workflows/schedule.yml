@@ -1,4 +1,7 @@
 on:
+  push:
+    branches:
+      - master
   schedule:
     - cron: '0 * * * *'
 name: Update gist with latest reads
