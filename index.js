@@ -47,7 +47,7 @@ async function main() {
       : `I haven't read anything recently.`
 
     // Update your gist
-    await updateGist([wrap(currentlyReading), wrap('-'.repeat(58)), wrap(recentlyRead)]);
+    await updateGist([wrap(currentlyReading), '\n', wrap(recentlyRead), '\n', '\n']);
   } catch (error) {
     console.error(`Unable to fetch Goodreads books\n${error}`)
   }
