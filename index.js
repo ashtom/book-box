@@ -17,7 +17,7 @@ const octokit = new Octokit({
 });
 
 async function main() {
-  const wrap = wordwrap(58);
+  const wrap = wordwrap(50);
 
   try {
     const readShelf = await got(`https://www.goodreads.com/review/list/${goodreadsUserId}.xml?key=${goodreadsKey}&v=2&shelf=read&sort=date_read&per_page=1`);
