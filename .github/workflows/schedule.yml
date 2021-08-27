@@ -4,7 +4,7 @@ on:
       - master
   schedule:
     - cron: '0 * * * *'
-name: Update gist with latest reads
+name: Update gist with latest goodreads
 jobs:
   update-gist:
     runs-on: ubuntu-latest
